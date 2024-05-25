@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023年NBA球员数据统计</title>
+    <style>
+        body {
+            justify-content: center;
+            width: 1500px;
+        }
+    </style>
+    <script src="./echarts.js"></script>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <h1>2023年NBA球员数据统计</h1>
+    <h2>1. 一些Top5数据</h2>
+    <div id="top_5_score" style="width: 1500px; height:  600px; margin: 0 auto;"></div>
+    <div id="top_5_time" style="width: 1500px; height:  600px; margin: 0 auto;"></div>
+    <div id="top_5_shot" style="width: 1500px; height:  600px; margin: 0 auto;"></div>
+    <div id="top_5_freeThrows" style="width: 1500px; height:  600px; margin: 0 auto;"></div>
+
+    <h2>2. 各位置得分情况统计</h2>
+    <div id='score_position' style="width: 1200px; height: 400px; margin: 0 auto;"></div>
+
+    <h2>3. 场均得分与各项因素的关系</h2>
+    <div>
+        <h3>(1) 各个位置的场均得分超过18分的人数</h3>
+        <div id="score_gt_18_positon" style="width: 1200px; height: 400px; margin: 0 auto;"></div>
+        <h3>(2) 场均得分与命中率的关系</h3>
+        <div id="score_hitrate" style="width: 1200px; height: 400px; margin: 0 auto;"></div>
+        <h3>(3) 场均得分与场均投篮数的关系</h3>
+        <div id="score_shot" style="width: 1200px; height: 400px; margin: 0 auto;"></div>
+        <h3>(4) 场均得分与年龄，位置的关系</h3>
+        <div id="age_position_score" style="width: 1200px; height: 1000px; margin: 0 auto;">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
