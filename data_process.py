@@ -33,7 +33,7 @@ def run():
     with open('./data/top_5_avg_freeThrows.json', 'w') as jf:
         json.dump(top_5_avg_freeThrows.to_dict(orient='records'), jf, indent=4)
 
-    print("<JSON文件生成成功>前十数据： 场均得分，场均出场时间，场均投篮出手次数，场均罚球次数")
+    print("<JSON文件生成成功>前五数据： 场均得分，场均出场时间，场均投篮出手次数，场均罚球次数")
 
     # 场均得分与场均出手次数
     selected_cols = df[['PTS', 'FGA']]
@@ -48,7 +48,7 @@ def run():
     selected_cols = df[['FGA', 'FG%']]
     selected_cols = selected_cols.dropna()  # 过滤空值
     data_dict = selected_cols.to_dict(orient='records')
-    json_path = './data/score_hitrate.json'
+    json_path = './data/shot_hitrate.json'
     with open(json_path, 'w') as jf:
         json.dump(data_dict, jf, indent=4)
     print("<JSON文件生成成功> 场均出手次数和场均命中率")
